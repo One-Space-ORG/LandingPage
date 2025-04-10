@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+
+  p {
+    font-family: 'Caveat', cursive;
+    @apply text-2xl tracking-wide;
+    transform: rotate(-1deg);
+    position: relative;
+  }
+
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center px-6 py-3 rounded-lg transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-warm-600 text-white hover:bg-warm-700;
+  }
+}
