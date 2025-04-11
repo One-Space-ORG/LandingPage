@@ -6,7 +6,7 @@ import { cn } from "../lib/utils";
 export function LampDemo() {
   return (
     <div className="flex flex-col items-center bg-slate-950">
-        <h1 className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-2xl font-medium tracking-tight text-transparent md:text-4xl">
+        <h1 className="mt-8 bg-white py-4 bg-clip-text text-center text-2xl font-medium tracking-tight text-transparent md:text-4xl">
             Layout Design Example
           </h1>
       <LampContainer>
@@ -22,7 +22,7 @@ export function LampDemo() {
         >
           
           
-          <div className="w-[800px] transform translate-y-[-50px]">
+          <div className="w-[1200px] transform translate-y-[100px]">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -36,7 +36,7 @@ export function LampDemo() {
               <img 
                 src="../OneSpace.png" 
                 alt="OneSpace Example Layout" 
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto rounded-lg scale-110"
               />
             </motion.div>
           </div>
